@@ -34,28 +34,28 @@ const NAV_LINKS = [
 
 const SCRIPTS = [
   {
-    title: "Documentary Script Sample",
-    description: "A research-driven narrative exploring the dynamics of a company or industry through structured storytelling.",
+    title: "The Rise and Fall of Nokia",
+    description: "The statement of Irony. But the irony of everything is, the company that connected billions went from untouchable household name to a memory in a bottom of a drawer.",
     link: "https://docs.google.com/document/d/130hs2za16FeCkv5Qz6b147r4rk3vdzRsaHClEDz20RU",
-    type: "Documentary"
-  },
-  {
-    title: "Industry Breakdown Script",
-    description: "An analytical script explaining the mechanics behind major industries and market events.",
-    link: "https://docs.google.com/document/d/1-pOaJvpLa5h8NE620jYL9EXf2wXVwpGguLhPx0T28F4",
     type: "Industry Analysis"
   },
   {
-    title: "Business Storytelling Script",
-    description: "A narrative-focused script exploring the rise, strategy, or challenges of companies.",
-    link: "https://docs.google.com/document/d/11IYjW--fKNMwEPwcL8vbaojzw5wHRfSgfW6e-9NvH_k",
-    type: "Business"
+    title: "After That Day (Narative Fiction)",
+    description: "The Turning Point (Focus on New Hope). But then, a message. A name Jade hasn't seen in years. A simple invitation, yet it sends a tremor through her carefully constructive defences.",
+    link: "https://docs.google.com/document/d/1-pOaJvpLa5h8NE620jYL9EXf2wXVwpGguLhPx0T28F4",
+    type: "Fiction"
   },
   {
-    title: "Research-Based Commentary Script",
-    description: "A commentary-style YouTube script combining research, insight, and storytelling.",
+    title: "Alaska's Deadliest Mass Murderer was a Local Baker",
+    description: "Rob fantacies escalated into violence, bu tone encounter in 1979 did not go as planned... Robert Hansen confessed to 17 murders, even though the police suspect there were more.",
+    link: "https://docs.google.com/document/d/11IYjW--fKNMwEPwcL8vbaojzw5wHRfSgfW6e-9NvH_k",
+    type: "Crime"
+  },
+  {
+    title: "Your Heart is Under Attack",
+    description: "For patients with hiht Triglycerides or Statin intolerance, the document introduces PCSK9 inhibitors as a revolutionary, injectable class of alternative treatment.",
     link: "https://docs.google.com/document/d/128r-BfG794NZT_kUJiTAEevQuh-X2F0uVj1wNu1e-sA",
-    type: "Commentary"
+    type: "Health/Science"
   }
 ];
 
