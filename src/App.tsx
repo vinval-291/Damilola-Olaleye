@@ -571,30 +571,34 @@ export default function App() {
       </main>
 
       {/* Footer */}
-      <footer className={`py-12 ${themeClasses.bg} border-t ${themeClasses.border}`}>
-        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8 text-center md:text-left">
-          <div className={`text-lg font-display font-bold tracking-tighter ${isDarkMode ? 'text-white' : 'text-zinc-900'}`}>
-            OLALEYE <span className="text-yt-red">DAMILOLA</span>
-            <div className="text-white/30 text-[10px] uppercase tracking-widest">
-          Site developed by <a href="https://www.linkedin.com/in/kuteyi-oluwaloye-vincent" target="_blank" rel="noopener noreferrer" className="text-gold hover:text-white transition-colors">Kuteyi Oluwaloye Vincent</a>
-        </div>
+      <footer className={`py-16 ${themeClasses.bg} border-t ${themeClasses.border}`}>
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-8 text-center md:text-left mb-12">
+            <div className={`text-lg font-display font-bold tracking-tighter ${isDarkMode ? 'text-white' : 'text-zinc-900'}`}>
+              OLALEYE <span className="text-yt-red">DAMILOLA</span>
+            </div>
+            
+            <div className="flex flex-wrap justify-center gap-x-8 gap-y-4">
+              {NAV_LINKS.map(link => (
+                <a 
+                  key={link.name} 
+                  href={link.href} 
+                  className={`text-xs font-bold uppercase tracking-widest ${themeClasses.textMuted} hover:text-yt-red transition-colors`}
+                >
+                  {link.name}
+                </a>
+              ))}
+            </div>
           </div>
           
-          <div className="flex flex-wrap justify-center gap-x-8 gap-y-4">
-            {NAV_LINKS.map(link => (
-              <a 
-                key={link.name} 
-                href={link.href} 
-                className={`text-xs font-bold uppercase tracking-widest ${themeClasses.textMuted} hover:text-yt-red transition-colors`}
-              >
-                {link.name}
-              </a>
-            ))}
+          <div className={`pt-8 border-t ${themeClasses.border} flex flex-col items-center gap-3 text-center`}>
+            <p className={`text-xs ${themeClasses.textMuted} uppercase tracking-widest`}>
+              &copy; {new Date().getFullYear()} All Rights Reserved.
+            </p>
+            <p className={`text-[10px] ${themeClasses.textMuted} uppercase tracking-[0.2em]`}>
+              Site developed by <a href="https://www.linkedin.com/in/kuteyi-oluwaloye-vincent" target="_blank" rel="noopener noreferrer" className="hover:text-yt-red transition-colors font-bold">Kuteyi Oluwaloye Vincent</a>
+            </p>
           </div>
-          
-          <p className={`text-xs ${themeClasses.textMuted} uppercase tracking-widest`}>
-            &copy; {new Date().getFullYear()} All Rights Reserved.
-          </p>
         </div>
       </footer>
     </div>
