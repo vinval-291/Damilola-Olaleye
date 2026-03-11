@@ -575,7 +575,9 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8 text-center md:text-left">
           <div className={`text-lg font-display font-bold tracking-tighter ${isDarkMode ? 'text-white' : 'text-zinc-900'}`}>
             OLALEYE <span className="text-yt-red">DAMILOLA</span>
-            Site developed by <a href="https://www.linkedin.com/in/kuteyi-oluwaloye-vincent" target="_blank" rel="noopener noreferrer" className="text-gold hover:text-white transition-colors">Kuteyi Oluwaloye Vincent</a>
+            <div className="text-white/30 text-[10px] uppercase tracking-widest">
+          Site developed by <a href="https://www.linkedin.com/in/kuteyi-oluwaloye-vincent" target="_blank" rel="noopener noreferrer" className="text-gold hover:text-white transition-colors">Kuteyi Oluwaloye Vincent</a>
+        </div>
           </div>
           
           <div className="flex flex-wrap justify-center gap-x-8 gap-y-4">
