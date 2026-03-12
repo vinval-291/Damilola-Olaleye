@@ -509,66 +509,78 @@ export default function App() {
                 </div>
               </div>
               
-              <div className={`${themeClasses.bgAlt} p-10 rounded-3xl border ${themeClasses.border}`}>
-                <form 
-                  action="https://formspree.io/f/mqeybewk" 
-                  method="POST"
-                  className="space-y-6"
-                >
-                  <div className="grid sm:grid-cols-2 gap-6">
-                    <div className="space-y-2">
-                      <label className={`text-xs font-bold uppercase tracking-widest ${themeClasses.textMuted}`}>Name</label>
-                      <input 
-                        type="text" 
-                        name="name"
-                        required
-                        className={`w-full px-4 py-3 ${themeClasses.bg} border ${themeClasses.border} focus:border-yt-red outline-none transition-all ${isDarkMode ? 'text-white' : 'text-zinc-900'}`} 
-                        placeholder="John Doe" 
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <label className={`text-xs font-bold uppercase tracking-widest ${themeClasses.textMuted}`}>Email</label>
-                      <input 
-                        type="email" 
-                        name="email"
-                        required
-                        className={`w-full px-4 py-3 ${themeClasses.bg} border ${themeClasses.border} focus:border-yt-red outline-none transition-all ${isDarkMode ? 'text-white' : 'text-zinc-900'}`} 
-                        placeholder="john@example.com" 
-                      />
-                    </div>
-                  </div>
-                  <div className="space-y-2">
-                    <label className={`text-xs font-bold uppercase tracking-widest ${themeClasses.textMuted}`}>Subject</label>
-                    <input 
-                      type="text" 
-                      name="subject"
-                      required
-                      className={`w-full px-4 py-3 ${themeClasses.bg} border ${themeClasses.border} focus:border-yt-red outline-none transition-all ${isDarkMode ? 'text-white' : 'text-zinc-900'}`} 
-                      placeholder="Project Inquiry" 
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <label className={`text-xs font-bold uppercase tracking-widest ${themeClasses.textMuted}`}>Message</label>
-                    <textarea 
-                      rows={5} 
-                      name="message"
-                      required
-                      className={`w-full px-4 py-3 ${themeClasses.bg} border ${themeClasses.border} focus:border-yt-red outline-none transition-all resize-none ${isDarkMode ? 'text-white' : 'text-zinc-900'}`} 
-                      placeholder="Tell me about your project..."
-                    ></textarea>
-                  </div>
-                  <button 
-                    type="submit"
-                    className={`w-full py-4 ${isDarkMode ? 'bg-white text-zinc-950' : 'bg-zinc-900 text-white'} font-bold uppercase tracking-widest hover:bg-yt-red hover:text-white transition-all`}
-                  >
-                    Send Message
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
+             <div className={`w-full max-w-2xl mx-auto ${themeClasses.bgAlt} p-6 md:p-10 rounded-3xl border ${themeClasses.border} overflow-hidden`}>
+  <form 
+    action="https://formspree.io/f/mqeybewk" 
+    method="POST"
+    className="space-y-6 w-full"
+  >
+
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+      <div className="space-y-2 w-full">
+        <label className={`text-xs font-bold uppercase tracking-widest ${themeClasses.textMuted}`}>
+          Name
+        </label>
+        <input 
+          type="text"
+          name="name"
+          required
+          placeholder="John Doe"
+          className={`w-full box-border px-4 py-3 ${themeClasses.bg} border ${themeClasses.border} focus:border-yt-red outline-none transition-all ${isDarkMode ? 'text-white' : 'text-zinc-900'}`}
+        />
+      </div>
+
+      <div className="space-y-2 w-full">
+        <label className={`text-xs font-bold uppercase tracking-widest ${themeClasses.textMuted}`}>
+          Email
+        </label>
+        <input 
+          type="email"
+          name="email"
+          required
+          placeholder="john@example.com"
+          className={`w-full box-border px-4 py-3 ${themeClasses.bg} border ${themeClasses.border} focus:border-yt-red outline-none transition-all ${isDarkMode ? 'text-white' : 'text-zinc-900'}`}
+        />
+      </div>
+
+    </div>
+
+    <div className="space-y-2">
+      <label className={`text-xs font-bold uppercase tracking-widest ${themeClasses.textMuted}`}>
+        Subject
+      </label>
+      <input 
+        type="text"
+        name="subject"
+        required
+        placeholder="Project Inquiry"
+        className={`w-full box-border px-4 py-3 ${themeClasses.bg} border ${themeClasses.border} focus:border-yt-red outline-none transition-all ${isDarkMode ? 'text-white' : 'text-zinc-900'}`}
+      />
+    </div>
+
+    <div className="space-y-2">
+      <label className={`text-xs font-bold uppercase tracking-widest ${themeClasses.textMuted}`}>
+        Message
+      </label>
+      <textarea
+        rows={5}
+        name="message"
+        required
+        placeholder="Tell me about your project..."
+        className={`w-full box-border px-4 py-3 ${themeClasses.bg} border ${themeClasses.border} focus:border-yt-red outline-none transition-all resize-none ${isDarkMode ? 'text-white' : 'text-zinc-900'}`}
+      ></textarea>
+    </div>
+
+    <button
+      type="submit"
+      className={`w-full py-4 ${isDarkMode ? 'bg-white text-zinc-950' : 'bg-zinc-900 text-white'} font-bold uppercase tracking-widest hover:bg-yt-red hover:text-white transition-all`}
+    >
+      Send Message
+    </button>
+
+  </form>
+</div>
 
       {/* Footer */}
       <footer className={`py-16 ${themeClasses.bg} border-t ${themeClasses.border}`}>
