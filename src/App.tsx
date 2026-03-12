@@ -47,13 +47,13 @@ const SCRIPTS = [
   },
   {
     title: "Alaska's Deadliest Mass Murderer was a Local Baker",
-    description: "Rob fantacies escalated into violence, bu tone encounter in 1979 did not go as planned... Robert Hansen confessed to 17 murders, even though the police suspect there were more.",
+    description: "Rob fantacies escalated into violence, but one encounter in 1979 did not go as planned... Robert Hansen confessed to 17 murders, even though the police suspect there were more.",
     link: "https://docs.google.com/document/d/11IYjW--fKNMwEPwcL8vbaojzw5wHRfSgfW6e-9NvH_k",
     type: "Crime"
   },
   {
     title: "Your Heart is Under Attack",
-    description: "For patients with hiht Triglycerides or Statin intolerance, the document introduces PCSK9 inhibitors as a revolutionary, injectable class of alternative treatment.",
+    description: "For patients with the Triglycerides or Statin intolerance, the document introduces PCSK9 inhibitors as a revolutionary, injectable class of alternative treatment.",
     link: "https://docs.google.com/document/d/128r-BfG794NZT_kUJiTAEevQuh-X2F0uVj1wNu1e-sA",
     type: "Health/Science"
   }
@@ -511,7 +511,7 @@ export default function App() {
               
               <div className={`${themeClasses.bgAlt} p-10 rounded-3xl border ${themeClasses.border}`}>
                 <form 
-                  action="https://formspree.io/f/mjgayndn" 
+                  action="https://formspree.io/f/mqeybewk" 
                   method="POST"
                   className="space-y-6"
                 >
