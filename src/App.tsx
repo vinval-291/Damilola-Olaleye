@@ -503,7 +503,7 @@ export default function App() {
                     </div>
                     <div>
                       <h4 className={`text-xs font-bold uppercase tracking-widest ${themeClasses.textMuted} mb-1`}>Email</h4>
-                      <p className={`text-xl font-medium ${isDarkMode ? 'text-white' : 'text-zinc-900'}`}>hello@olaleyedamilola.com</p>
+                      <p className={`text-xl font-medium ${isDarkMode ? 'text-white' : 'text-zinc-900'}`}>olaleye.oludamilola@gmail.com</p>
                     </div>
                   </div>
                 </div>
