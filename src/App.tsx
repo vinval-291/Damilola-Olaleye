@@ -243,7 +243,7 @@ export default function App() {
               >
                 <div className={`aspect-[3/4] ${isDarkMode ? 'bg-zinc-800' : 'bg-zinc-200'} rounded-2xl overflow-hidden shadow-2xl grayscale hover:grayscale-0 transition-all duration-700`}>
                   <img 
-                    src="https://i.postimg.cc/q7GprzBc/Untitled-design-(37).png" 
+                    src="https://postimg.cc/3yWsCrvW" 
                     alt="Olaleye Damilola" 
                     className="w-full h-full object-cover"
                     referrerPolicy="no-referrer"
